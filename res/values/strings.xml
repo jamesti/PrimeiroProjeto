@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Primeiro Projeto</string>
+    <string name="action_settings">Configurações</string>
+    <string name="hello_world">Olá Mundo!</string>
+    <string name="aluno">James Moreira</string>
+    <string name="curso">Android Básico</string>
+
+</resources>

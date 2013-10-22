@@ -9,19 +9,45 @@
     tools:context=".Tela1" >
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textViewMensagem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="51dp"
+        android:layout_marginTop="51dp"
+        android:text="@string/msg" />
+
+    <EditText
+        android:id="@+id/editTextNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewMensagem"
+        android:layout_below="@+id/textViewMensagem"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/texto_nome" >
+
+        <requestFocus />
+    </EditText>
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/textViewResposta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView2"
-        android:layout_alignBottom="@+id/textView2"
-        android:layout_marginLeft="162dp"
-        android:layout_toRightOf="@+id/textView2"
-        android:text="TextView" />
+        android:layout_alignLeft="@+id/buttonProximo"
+        android:layout_below="@+id/buttonProximo"
+        android:layout_marginTop="29dp"
+        android:text="@string/resposta" />
+
+    <Button
+        android:id="@+id/buttonProximo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextNome"
+        android:layout_below="@+id/editTextNome"
+        android:layout_marginTop="37dp"
+        android:text="@string/botao_ok" />
 
 </RelativeLayout>
